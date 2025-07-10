@@ -31,6 +31,7 @@ function embed() {
 
   // Reserving space for code area should be done in early time
   // or the div may not be found later
+  console.log(sourceURL);
   document.write(`
 <style>.lds-ring{margin:1rem auto;position:relative;width:60px;height:60px}.lds-ring div{box-sizing:border-box;display:block;position:absolute;width:48px;height:48px;margin:6px;border:6px solid #fff;border-radius:50%;animation:lds-ring 1.2s cubic-bezier(0.5,0,0.5,1) infinite;border-color:#888 transparent transparent transparent}.lds-ring div:nth-child(1){animation-delay:-.45s}.lds-ring div:nth-child(2){animation-delay:-.3s}.lds-ring div:nth-child(3){animation-delay:-.15s}@keyframes lds-ring{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style>
 <div id="${containerId}" class="emgithub-container"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
